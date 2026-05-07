@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto – Café Pandeto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header id="encabezado-principal">
+        <div class="logo-contenedor">
+            <span class="logo-icono">☕</span>
+            <h1 class="nombre-negocio">Café Pandeto</h1>
+        </div>
+        <p class="eslogan">Tradición en cada taza desde 1998</p>
+    </header>
+
+    <nav id="navegacion-principal">
+        <ul class="menu-lista">
+            <li class="menu-item"><a href="index.html" class="enlace-nav">Inicio</a></li>
+            <li class="menu-item"><a href="index.html#servicios" class="enlace-nav">Servicios</a></li>
+            <li class="menu-item"><a href="index.html#nosotros" class="enlace-nav">Nosotros</a></li>
+            <li class="menu-item"><a href="contacto.html" class="enlace-nav activo enlace-destacado">Contáctenos</a></li>
+        </ul>
+    </nav>
+
+    <main id="contenido-principal">
+
+        <section id="encabezado-contacto" class="seccion-page-header">
+            <h2 class="titulo-pagina">Hablemos de café</h2>
+            <p class="subtitulo-pagina">Escríbenos y te respondemos en menos de 24 horas.</p>
+        </section>
+
+        <section id="seccion-contacto" class="seccion-contacto-principal">
+
+            <article class="contenedor-formulario" id="formulario-contacto-articulo">
+                <h3 class="subtitulo-formulario">Envíanos un mensaje</h3>
+                <form class="formulario" id="formulario-principal" action="#" method="POST">
+
+                    <div class="grupo-campo">
+                        <label for="campo-nombre" class="etiqueta-campo">
+                            Nombre completo <span class="requerido">*</span>
+                        </label>
+                        <input type="text" id="campo-nombre" name="nombre"
+                            class="campo-entrada" placeholder="Ej: María González" required>
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label for="campo-correo" class="etiqueta-campo">
+                            Correo electrónico <span class="requerido">*</span>
+                        </label>
+                        <input type="email" id="campo-correo" name="correo"
+                            class="campo-entrada" placeholder="ejemplo@correo.com" required>
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label for="campo-telefono" class="etiqueta-campo">
+                            Teléfono <span class="requerido">*</span>
+                        </label>
+                        <input type="tel" id="campo-telefono" name="telefono"
+                            class="campo-entrada" placeholder="Ej: 300 123 4567" required>
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label for="campo-mensaje" class="etiqueta-campo">
+                            Mensaje <span class="requerido">*</span>
+                        </label>
+                        <textarea id="campo-mensaje" name="mensaje"
+                            class="campo-entrada campo-textarea" rows="5"
+                            placeholder="Cuéntanos en qué podemos ayudarte..." required></textarea>
+                    </div>
+
+                    <p class="nota-requeridos"><span class="requerido">*</span> Campos obligatorios</p>
+
+                    <button type="submit" id="boton-enviar" class="boton-enviar">
+                        Enviar mensaje ☕
+                    </button>
+
+                </form>
+            </article>
+
+            <article class="contenedor-info-contacto" id="info-contacto-articulo">
+                <h3 class="subtitulo-info">Visítanos</h3>
+                <div class="bloque-info" id="bloque-ubicacion">
+                    <h4 class="titulo-bloque">📍 Dirección</h4>
+                    <address class="info-direccion">
+                        Calle 50 # 48 – 22<br>
+                        Parque Principal de Rionegro<br>
+                        Antioquia, Colombia
+                    </address>
+                </div>
+                <div class="bloque-info" id="bloque-horario">
+                    <h4 class="titulo-bloque">🕐 Horario</h4>
+                    <ul class="lista-horario">
+                        <li class="horario-item">Lunes a Viernes: 6:00 a.m. – 8:00 p.m.</li>
+                        <li class="horario-item">Sábado: 7:00 a.m. – 9:00 p.m.</li>
+                        <li class="horario-item">Domingo: 8:00 a.m. – 6:00 p.m.</li>
+                    </ul>
+                </div>
+                <div class="bloque-info" id="bloque-telefonos">
+                    <h4 class="titulo-bloque">📞 Teléfonos</h4>
+                    <p class="info-texto">Fijo: (604) 531-2200<br>WhatsApp: 310 987 6543</p>
+                </div>
+                <div class="cta-volver" id="bloque-volver">
+                    <p class="texto-volver">¿Quieres ver nuestros servicios?</p>
+                    <a href="index.html#servicios" class="boton-secundario">Ver servicios</a>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer id="pie-pagina">
+        <div class="footer-contenido">
+            <div class="footer-columna" id="footer-marca">
+                <h3 class="footer-titulo">☕ Café Pandeto</h3>
+                <p class="footer-texto">Tradición cafetera en Rionegro, Antioquia.</p>
+            </div>
+            <div class="footer-columna" id="footer-contacto">
+                <h4 class="footer-subtitulo">Encuéntranos</h4>
+                <address class="footer-direccion">
+                    Calle 50 # 48 - 22, Parque Principal<br>
+                    Rionegro, Antioquia<br>
+                    📞 (604) 531-2200
+                </address>
+            </div>
+            <div class="footer-columna" id="footer-enlaces">
+                <h4 class="footer-subtitulo">Navegación</h4>
+                <ul class="footer-lista">
+                    <li><a href="index.html" class="enlace-footer">Inicio</a></li>
+                    <li><a href="index.html#servicios" class="enlace-footer">Servicios</a></li>
+                    <li><a href="contacto.html" class="enlace-footer">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-inferior">
+            <p class="footer-derechos">© 2025 Café Pandeto. Todos los derechos reservados.</p>
+        </div>
+        
+    </footer>
+
+</body>
+</html>

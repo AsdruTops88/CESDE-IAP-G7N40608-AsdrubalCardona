@@ -1,0 +1,377 @@
+/* =======================================================
+   VERIFICACIÓN DOCENTE — NO ELIMINAR
+   ======================================================= */
+.verificacion-docente{
+    border: 3px dotted purple;
+}
+
+/* =======================================================
+   CAFÉ RAÍZ – styles.css | CESDE-IAP-G7N40608
+   ======================================================= */
+
+/* --- VARIABLES Y RESET --- */
+:root {
+    --color-crema:       #FAF3E0;
+    --color-crema-claro: #FDF8EE;
+    --color-cafe-oscuro: #2C1A0E;
+    --color-cafe-medio:  #5C3317;
+    --color-terracota:   #B85C38;
+    --color-terracota-claro: #D4845E;
+    --color-dorado:      #C9994A;
+    --color-gris-suave:  #E8E0D5;
+    --color-texto:       #2C1A0E;
+    --color-texto-suave: #6B4F3A;
+    --fuente-titulo: 'Playfair Display', Georgia, serif;
+    --fuente-cuerpo: 'Lato', Helvetica, Arial, sans-serif;
+    --sombra-suave: 0 2px 12px rgba(44,26,14,0.12);
+    --sombra-media: 0 4px 24px rgba(44,26,14,0.18);
+    --radio-borde: 6px;
+    --transicion: 0.3s ease;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+/* SELECTOR POR ETIQUETA */
+body {
+    font-family: var(--fuente-cuerpo);
+    background-color: var(--color-crema);
+    color: var(--color-texto);
+    font-size: 16px;
+    line-height: 1.7;
+    display: block;
+}
+h1 { font-family: var(--fuente-titulo); font-size: 2.4rem; color: var(--color-crema); font-weight: 700; }
+h2 { font-family: var(--fuente-titulo); font-size: 2rem; color: var(--color-cafe-oscuro); margin-bottom: 1rem; }
+h3 { font-family: var(--fuente-titulo); font-size: 1.4rem; color: var(--color-cafe-medio); margin-bottom: 0.6rem; }
+h4 { font-family: var(--fuente-titulo); font-size: 1.1rem; color: var(--color-cafe-oscuro); margin-bottom: 0.5rem; }
+p  { margin-bottom: 1rem; color: var(--color-texto-suave); }
+a  { color: var(--color-terracota); text-decoration: none; transition: color var(--transicion); }
+a:hover { color: var(--color-dorado); }
+ul { list-style: none; }
+img { max-width: 100%; height: auto; display: block; border-radius: var(--radio-borde); }
+address { font-style: normal; line-height: 1.9; color: var(--color-texto-suave); }
+strong { color: var(--color-cafe-oscuro); font-weight: 700; }
+em { font-style: italic; color: var(--color-terracota); }
+label { display: block; font-weight: 700; font-size: 0.9rem; color: var(--color-cafe-oscuro); margin-bottom: 0.4rem; }
+input, select, textarea { font-family: var(--fuente-cuerpo); font-size: 1rem; }
+button { cursor: pointer; font-family: var(--fuente-cuerpo); }
+
+/* --- HEADER — POSITION: sticky --- */
+/* SELECTOR POR ID */
+#encabezado-principal {
+    background-color: var(--color-cafe-oscuro);
+    padding: 1.5rem 3rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 3px solid var(--color-dorado);
+    box-shadow: var(--sombra-media);
+}
+
+/* SELECTOR POR CLASE */
+.logo-contenedor {
+    display: inline-block;
+    vertical-align: middle;
+}
+.logo-icono {
+    font-size: 2rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+/* SELECTOR POR DESCENDENCIA */
+#encabezado-principal h1 {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 2.2rem;
+    letter-spacing: 0.05em;
+}
+.eslogan {
+    color: var(--color-dorado);
+    font-size: 0.95rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+/* --- NAV — POSITION: sticky --- */
+#navegacion-principal {
+    background-color: var(--color-cafe-medio);
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    text-align: center;
+}
+.menu-lista { padding: 0; margin: 0; }
+
+/* SELECTOR POR DESCENDENCIA */
+.menu-lista .menu-item { display: inline-block; margin: 0; }
+.menu-item a {
+    display: inline-block;
+    padding: 0.85rem 1.8rem;
+    color: var(--color-crema);
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: background-color var(--transicion), color var(--transicion);
+    border-bottom: 3px solid transparent;
+}
+.menu-item a:hover {
+    background-color: rgba(201,153,74,0.2);
+    color: var(--color-dorado);
+    border-bottom-color: var(--color-dorado);
+}
+.enlace-nav.activo { color: var(--color-dorado); border-bottom: 3px solid var(--color-dorado); }
+.enlace-destacado { background-color: var(--color-terracota); color: var(--color-crema) !important; }
+.enlace-destacado:hover { background-color: var(--color-terracota-claro) !important; }
+
+/* --- MAIN --- */
+#contenido-principal { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+
+/* --- HERO --- */
+#bienvenida { padding: 5rem 0; border-bottom: 1px solid var(--color-gris-suave); }
+.seccion-hero { text-align: center; }
+.hero-texto { max-width: 650px; margin: 0 auto 3rem auto; }
+.titulo-seccion { font-size: 2.4rem; margin-bottom: 1.2rem; line-height: 1.25; }
+.descripcion-negocio { font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem; }
+.boton-cta {
+    display: inline-block;
+    background-color: var(--color-terracota);
+    color: var(--color-crema);
+    padding: 0.9rem 2.5rem;
+    border-radius: var(--radio-borde);
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: background-color var(--transicion), transform var(--transicion);
+    box-shadow: var(--sombra-suave);
+}
+.boton-cta:hover { background-color: var(--color-terracota-claro); color: var(--color-crema); transform: translateY(-2px); }
+
+/* POSITION: relative */
+.hero-imagen-contenedor { max-width: 500px; margin: 0 auto; position: relative; }
+.imagen-hero { width: 100%; border-radius: 12px; box-shadow: var(--sombra-media); border: 4px solid var(--color-dorado); }
+.imagen-placeholder {
+    background-color: var(--color-cafe-oscuro);
+    border-radius: 12px;
+    border: 4px solid var(--color-dorado);
+    height: 320px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--color-crema);
+}
+
+/* POSITION: absolute */
+.hero-imagen-contenedor::after {
+    content: "Rionegro, Antioquia";
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    background-color: rgba(44,26,14,0.85);
+    color: var(--color-dorado);
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+/* --- NOSOTROS --- */
+#nosotros { padding: 4.5rem 0; border-bottom: 1px solid var(--color-gris-suave); }
+.seccion-nosotros { background-color: var(--color-crema-claro); padding: 3rem; border-radius: 12px; margin: 2rem 0; }
+.seccion-nosotros h2 { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1rem; border-bottom: 2px solid var(--color-gris-suave); }
+.articulo-historia { margin-bottom: 2rem; }
+.subtitulo-articulo { color: var(--color-terracota); margin-bottom: 0.8rem; }
+.lista-valores { margin-top: 0.5rem; }
+.valor-item { padding: 0.6rem 0; border-bottom: 1px solid var(--color-gris-suave); color: var(--color-texto-suave); }
+.valor-item:last-child { border-bottom: none; }
+
+/* --- SERVICIOS --- */
+#servicios { padding: 4.5rem 0; border-bottom: 1px solid var(--color-gris-suave); }
+.seccion-servicios { text-align: center; }
+.seccion-servicios h2 { margin-bottom: 0.5rem; }
+.subtexto-seccion { color: var(--color-texto-suave); margin-bottom: 3rem; }
+.servicios-contenedor { text-align: left; }
+
+.tarjeta-servicio {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin: 1% 1.5%;
+    background-color: var(--color-crema-claro);
+    border-radius: 10px;
+    padding: 2rem 1.5rem 3.5rem 1.5rem;
+    border: 1px solid var(--color-gris-suave);
+    border-top: 4px solid var(--color-dorado);
+    box-shadow: var(--sombra-suave);
+    transition: transform var(--transicion), box-shadow var(--transicion);
+    position: relative;
+}
+.tarjeta-servicio:hover { transform: translateY(-4px); box-shadow: var(--sombra-media); }
+.icono-servicio { font-size: 2.5rem; margin-bottom: 1rem; display: block; }
+.nombre-servicio { font-size: 1.15rem; margin-bottom: 0.6rem; color: var(--color-cafe-oscuro); }
+.descripcion-servicio { font-size: 0.92rem; line-height: 1.65; margin-bottom: 1.2rem; }
+.etiqueta-precio {
+    display: inline-block;
+    background-color: var(--color-cafe-oscuro);
+    color: var(--color-dorado);
+    padding: 0.3rem 0.9rem;
+    border-radius: 20px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+}
+
+/* --- FOOTER — POSITION: relative --- */
+#pie-pagina {
+    background-color: var(--color-cafe-oscuro);
+    color: var(--color-crema);
+    padding: 3rem 3rem 0 3rem;
+    margin-top: 3rem;
+    position: relative;
+}
+.footer-contenido { max-width: 1100px; margin: 0 auto; padding-bottom: 2.5rem; border-bottom: 1px solid rgba(201,153,74,0.3); }
+.footer-columna { display: inline-block; vertical-align: top; width: 30%; margin-right: 3%; margin-bottom: 2rem; }
+.footer-columna:last-child { margin-right: 0; }
+.footer-titulo { font-family: var(--fuente-titulo); font-size: 1.5rem; color: var(--color-dorado); margin-bottom: 1rem; }
+.footer-subtitulo { font-family: var(--fuente-titulo); font-size: 1rem; color: var(--color-dorado); margin-bottom: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; }
+.footer-texto { color: rgba(250,243,224,0.75); font-size: 0.92rem; line-height: 1.8; }
+
+/* SELECTOR POR DESCENDENCIA */
+#pie-pagina address { color: rgba(250,243,224,0.75); font-size: 0.92rem; }
+.footer-lista li { margin-bottom: 0.4rem; }
+.enlace-footer { color: rgba(250,243,224,0.75); font-size: 0.92rem; transition: color var(--transicion); }
+.enlace-footer:hover { color: var(--color-dorado); }
+.footer-inferior { text-align: center; padding: 1.2rem 0; max-width: 1100px; margin: 0 auto; }
+.footer-derechos { color: rgba(250,243,224,0.5); font-size: 0.82rem; margin: 0; }
+
+/* POSITION: absolute en pseudo-elemento */
+#pie-pagina::before {
+    content: "☕";
+    position: absolute;
+    top: 1.5rem;
+    right: 3rem;
+    font-size: 3rem;
+    opacity: 0.08;
+}
+
+/* --- CONTACTO: encabezado de página --- */
+#encabezado-contacto { padding: 4rem 0 2rem 0; text-align: center; border-bottom: 1px solid var(--color-gris-suave); margin-bottom: 3rem; }
+.titulo-pagina { font-family: var(--fuente-titulo); font-size: 2.6rem; color: var(--color-cafe-oscuro); margin-bottom: 0.8rem; }
+.subtitulo-pagina { color: var(--color-texto-suave); font-size: 1.1rem; max-width: 520px; margin: 0 auto; }
+
+/* --- CONTACTO: formulario + info --- */
+#seccion-contacto { padding-bottom: 4rem; }
+.contenedor-formulario {
+    display: inline-block;
+    vertical-align: top;
+    width: 58%;
+    margin-right: 4%;
+    background-color: var(--color-crema-claro);
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--color-gris-suave);
+    box-shadow: var(--sombra-suave);
+}
+.contenedor-info-contacto { display: inline-block; vertical-align: top; width: 34%; }
+.subtitulo-formulario { color: var(--color-cafe-oscuro); margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 2px solid var(--color-gris-suave); }
+.formulario { width: 100%; }
+.grupo-campo { margin-bottom: 1.4rem; }
+.campo-entrada {
+    display: block;
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 2px solid var(--color-gris-suave);
+    border-radius: var(--radio-borde);
+    background-color: #fff;
+    color: var(--color-texto);
+    font-size: 1rem;
+    transition: border-color var(--transicion), box-shadow var(--transicion);
+    outline: none;
+}
+.campo-entrada:focus { border-color: var(--color-terracota); box-shadow: 0 0 0 3px rgba(184,92,56,0.15); }
+.campo-textarea { resize: vertical; min-height: 130px; font-family: var(--fuente-cuerpo); line-height: 1.6; }
+.requerido { color: var(--color-terracota); font-weight: 700; }
+.nota-requeridos { font-size: 0.82rem; color: var(--color-texto-suave); margin-bottom: 1.5rem; }
+
+/* SELECTOR POR ID */
+#boton-enviar {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--color-terracota);
+    color: var(--color-crema);
+    border: none;
+    border-radius: var(--radio-borde);
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    transition: background-color var(--transicion), transform var(--transicion);
+    box-shadow: var(--sombra-suave);
+}
+#boton-enviar:hover { background-color: var(--color-terracota-claro); transform: translateY(-2px); }
+#boton-enviar:active { transform: translateY(0); }
+
+/* --- BLOQUES INFO CONTACTO --- */
+.bloque-info {
+    background-color: var(--color-crema-claro);
+    padding: 1.4rem;
+    border-radius: var(--radio-borde);
+    border: 1px solid var(--color-gris-suave);
+    margin-bottom: 1rem;
+    position: relative;
+    border-left: 4px solid var(--color-dorado);
+}
+.titulo-bloque { font-size: 0.95rem; color: var(--color-cafe-medio); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.06em; }
+.info-texto { font-size: 0.9rem; line-height: 1.8; margin-bottom: 0; }
+.lista-horario { font-size: 0.9rem; color: var(--color-texto-suave); }
+.horario-item { padding: 0.2rem 0; }
+.subtitulo-info { font-size: 1.3rem; color: var(--color-cafe-oscuro); margin-bottom: 1.2rem; padding-bottom: 0.8rem; border-bottom: 2px solid var(--color-gris-suave); }
+
+/* --- CTA VOLVER --- */
+.cta-volver { text-align: center; padding: 1.5rem; background-color: var(--color-cafe-oscuro); border-radius: var(--radio-borde); margin-top: 1rem; }
+.texto-volver { color: var(--color-crema); font-size: 0.9rem; margin-bottom: 0.8rem; }
+.boton-secundario {
+    display: inline-block;
+    background-color: var(--color-dorado);
+    color: var(--color-cafe-oscuro);
+    padding: 0.6rem 1.5rem;
+    border-radius: var(--radio-borde);
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    transition: background-color var(--transicion), transform var(--transicion);
+}
+.boton-secundario:hover { background-color: var(--color-terracota-claro); color: var(--color-crema); transform: translateY(-2px); }
+
+/* --- BOTÓN WHATSAPP — POSITION: fixed --- */
+#boton-whatsapp {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #25D366;
+    color: #fff;
+    padding: 0.8rem 1.2rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(37,211,102,0.45);
+    z-index: 200;
+    transition: transform var(--transicion);
+    display: inline-block;
+}
+#boton-whatsapp:hover { transform: translateY(-3px) scale(1.05); color: #fff; }
