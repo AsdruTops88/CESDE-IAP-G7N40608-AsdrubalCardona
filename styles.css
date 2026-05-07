@@ -188,9 +188,9 @@ button { cursor: pointer; font-family: var(--fuente-cuerpo); }
 
 /* --- NOSOTROS --- */
 #nosotros { padding: 4.5rem 0; border-bottom: 1px solid var(--color-gris-suave); }
-.seccion-nosotros { background-color: var(--color-crema-claro); padding: 3rem; border-radius: 12px; margin: 2rem 0; }
+.seccion-nosotros {margin-left: 5px; background-color: var(--color-crema-claro); padding: 3rem; border-radius: 12px; margin: 2rem 0; }
 .seccion-nosotros h2 { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1rem; border-bottom: 2px solid var(--color-gris-suave); }
-.articulo-historia { margin-bottom: 2rem; }
+.articulo-historia { margin-left: 2rem; margin-bottom: 2rem; }
 .subtitulo-articulo { color: var(--color-terracota); margin-bottom: 0.8rem; }
 .lista-valores { margin-top: 0.5rem; }
 .valor-item { padding: 0.6rem 0; border-bottom: 1px solid var(--color-gris-suave); color: var(--color-texto-suave); }
