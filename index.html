@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Pandeto – Sabor Auténtico</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header id="encabezado-principal">
+        <div class="logo-contenedor">
+            <span class="logo-icono">☕</span>
+            <h1 class="nombre-negocio">Café Pandeto</h1>
+        </div>
+        <p class="eslogan">Tradición en cada taza desde 1998</p>
+    </header>
+
+    <nav id="navegacion-principal">
+        <ul class="menu-lista">
+            <li class="menu-item"><a href="index.html" class="enlace-nav activo">Inicio</a></li>
+            <li class="menu-item"><a href="#servicios" class="enlace-nav">Servicios</a></li>
+            <li class="menu-item"><a href="#nosotros" class="enlace-nav">Nosotros</a></li>
+            <li class="menu-item"><a href="contacto.html" class="enlace-nav enlace-destacado">Contáctenos</a></li>
+        </ul>
+    </nav>
+    <div class="mi-taza">☕</div>
+    <main id="contenido-principal">
+
+        <section id="bienvenida" class="seccion-hero">
+            <div class="hero-texto">
+                <h2 class="titulo-seccion">Bienvenidos a <em>Café Pandeto</em></h2>
+                <p class="descripcion-negocio">
+                    Somos una cafetería artesanal ubicada en el corazón de Rionegro, Antioquia.
+                    Seleccionamos granos de origen colombiano con el cuidado que merece cada sorbo.
+                </p>
+                <a href="contacto.html" class="boton-cta">Reserva tu mesa</a>
+            </div>
+            <div class="hero-imagen-contenedor">
+                <img
+                    src="images/CoffeeShop.jpg"
+                    alt="Taza de café artesanal en Café Pandeto"
+                    class="imagen-hero"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                >
+                <div class="imagen-placeholder" style="display:none;">
+                    <span>☕</span>
+                    <p>Café Pandeto</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="nosotros" class="seccion-nosotros">
+            <h2 class="titulo-seccion">¿Quiénes somos?</h2>
+            <article class="articulo-historia">
+                <h3 class="subtitulo-articulo">Nuestra historia</h3>
+                <p>
+                    Café Raíz nació en 1998 de las manos de la familia Cardona, caficultores de
+                    tercera generación en las montañas de Antioquia.
+                </p>
+            </article>
+            <article class="articulo-valores">
+                <h3 class="subtitulo-articulo">Nuestros valores</h3>
+                <ul class="lista-valores">
+                    <li class="valor-item">🌿 <strong>Sostenibilidad</strong> – Trabajamos con fincas de comercio justo.</li>
+                    <li class="valor-item">🏔️ <strong>Origen</strong> – Granos 100% colombianos de altura.</li>
+                    <li class="valor-item">❤️ <strong>Comunidad</strong> – Apoyamos a los caficultores locales.</li>
+                    <li class="valor-item">✨ <strong>Calidad</strong> – Tostado artesanal en pequeños lotes.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="servicios" class="seccion-servicios">
+            <h2 class="titulo-seccion">Nuestros Servicios</h2>
+            <p class="subtexto-seccion">Todo lo que Café Pandeto tiene para ofrecerte</p>
+            <div class="servicios-contenedor">
+                <article class="tarjeta-servicio" id="servicio-cafe">
+                    <div class="icono-servicio">☕</div>
+                    <h3 class="nombre-servicio">Café de Especialidad</h3>
+                    <p class="descripcion-servicio">Espressos, pour-overs, cold brew y más.</p>
+                    <span class="etiqueta-precio">Desde $3.500</span>
+                </article>
+                <article class="tarjeta-servicio" id="servicio-pasteleria">
+                    <div class="icono-servicio">🥐</div>
+                    <h3 class="nombre-servicio">Pastelería Artesanal</h3>
+                    <p class="descripcion-servicio">Bollería horneada cada mañana sin conservantes.</p>
+                    <span class="etiqueta-precio">Desde $4.000</span>
+                </article>
+                <article class="tarjeta-servicio" id="servicio-talleres">
+                    <div class="icono-servicio">🎓</div>
+                    <h3 class="nombre-servicio">Talleres de Barismo</h3>
+                    <p class="descripcion-servicio">Aprende a preparar café como un profesional.</p>
+                    <span class="etiqueta-precio">$45.000 / persona</span>
+                </article>
+                <article class="tarjeta-servicio" id="servicio-domicilio">
+                    <div class="icono-servicio">📦</div>
+                    <h3 class="nombre-servicio">Café a Domicilio</h3>
+                    <p class="descripcion-servicio">Granos frescos tostados en tu puerta cada mes.</p>
+                    <span class="etiqueta-precio">Desde $38.000 / mes</span>
+                </article>
+                <article class="tarjeta-servicio" id="servicio-eventos">
+                    <div class="icono-servicio">🎉</div>
+                    <h3 class="nombre-servicio">Eventos Corporativos</h3>
+                    <p class="descripcion-servicio">Estación de café profesional en tu empresa.</p>
+                    <span class="etiqueta-precio">Cotización personalizada</span>
+                </article>
+                <article class="tarjeta-servicio" id="servicio-tienda">
+                    <div class="icono-servicio">🛒</div>
+                    <h3 class="nombre-servicio">Tienda de Café</h3>
+                    <p class="descripcion-servicio">Granos, mezclas y utensilios para casa.</p>
+                    <span class="etiqueta-precio">Varios precios</span>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="pie-pagina">
+        <div class="footer-contenido">
+            <div class="footer-columna" id="footer-marca">
+                <h3 class="footer-titulo">☕ Café Pandeto</h3>
+                <p class="footer-texto">Tradición cafetera en Rionegro, Antioquia.</p>
+            </div>
+            <div class="footer-columna" id="footer-contacto">
+                <h4 class="footer-subtitulo">Encuéntranos</h4>
+                <address class="footer-direccion">
+                    Calle 50 # 48 - 22, Parque Principal<br>
+                    Rionegro, Antioquia<br>
+                    📞 (604) 531-2200
+                </address>
+            </div>
+            <div class="footer-columna" id="footer-enlaces">
+                <h4 class="footer-subtitulo">Navegación</h4>
+                <ul class="footer-lista">
+                    <li><a href="index.html" class="enlace-footer">Inicio</a></li>
+                    <li><a href="#servicios" class="enlace-footer">Servicios</a></li>
+                    <li><a href="contacto.html" class="enlace-footer">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-inferior">
+            <p class="footer-derechos">© 2025 Café Pandeto. Todos los derechos reservados.</p>
+        </div>
+       
+    </footer>
+
+</body>
+</html>
